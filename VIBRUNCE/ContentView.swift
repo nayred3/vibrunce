@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
+    @EnvironmentObject var authentication: Authentication
     
     
     
@@ -34,6 +35,14 @@ struct ContentView: View {
                         .foregroundColor(.black)
                         .cornerRadius(10)
                 })
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Log out") {
+                        authentication.updateValidation(success: false)
+                        
+                    }
+                }
             }
         }
     }

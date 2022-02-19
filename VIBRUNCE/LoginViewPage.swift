@@ -15,9 +15,10 @@ struct LoginViewPage: View {
             Text("VIBRUNCE")
                 .font(.largeTitle)
                 .bold()
-            TextField("Email Address", text: $loginVM.credentials.email)
+            TextField("Email Address or Username", text: $loginVM.credentials.email)
                 .keyboardType(.emailAddress)
             SecureField("Password", text: $loginVM.credentials.password)
+            
             if loginVM.showProgressView {
                 ProgressView()
             }
@@ -39,6 +40,9 @@ struct LoginViewPage: View {
         .textFieldStyle(RoundedBorderTextFieldStyle())
         .padding()
         .disabled(loginVM.showProgressView)
+        .alert(item: $loginVM.error) { error in
+            Alert(title: Text("Invalid Login"), message: Text(error.localizedDescription))
+        }
     }
 }
 
