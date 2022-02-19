@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3129DA827C19788007BDDE4 /* BAHNSCHRIFT 12.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D3129DA727C19788007BDDE4 /* BAHNSCHRIFT 12.TTF */; };
+		D3129DAB27C1A797007BDDE4 /* MapAnn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3129DAA27C1A797007BDDE4 /* MapAnn.swift */; };
+		D3129DAD27C1AE25007BDDE4 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3129DAC27C1AE25007BDDE4 /* LocationMapAnnotationView.swift */; };
 		D341363927C04EDE008C55B7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341363827C04EDE008C55B7 /* ContentViewModel.swift */; };
 		D34AD85127C14EC1005B86D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85027C14EC1005B86D6 /* LoginView.swift */; };
 		D34AD85327C14F33005B86D6 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85227C14F33005B86D6 /* Credentials.swift */; };
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3129DA727C19788007BDDE4 /* BAHNSCHRIFT 12.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BAHNSCHRIFT 12.TTF"; path = "../../Downloads/Bahnschrift-Font-Family/BAHNSCHRIFT 12.TTF"; sourceTree = "<group>"; };
+		D3129DA927C197A9007BDDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D3129DAA27C1A797007BDDE4 /* MapAnn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnn.swift; sourceTree = "<group>"; };
+		D3129DAC27C1AE25007BDDE4 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 		D341363827C04EDE008C55B7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		D34AD85027C14EC1005B86D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D34AD85227C14F33005B86D6 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
@@ -110,6 +117,8 @@
 		D398E85A27BC3DD600C35D38 /* VIBRUNCE */ = {
 			isa = PBXGroup;
 			children = (
+				D3129DA927C197A9007BDDE4 /* Info.plist */,
+				D3129DA727C19788007BDDE4 /* BAHNSCHRIFT 12.TTF */,
 				D398E85B27BC3DD600C35D38 /* VIBRUNCEApp.swift */,
 				D34AD85E27C15EAE005B86D6 /* Authentication.swift */,
 				D398E85D27BC3DD600C35D38 /* ContentView.swift */,
@@ -122,6 +131,8 @@
 				D34AD85627C14F7D005B86D6 /* APIService.swift */,
 				D34AD85A27C15B22005B86D6 /* UIApplication+Extension.swift */,
 				D34AD85C27C15CE6005B86D6 /* LoginViewPage.swift */,
+				D3129DAA27C1A797007BDDE4 /* MapAnn.swift */,
+				D3129DAC27C1AE25007BDDE4 /* LocationMapAnnotationView.swift */,
 			);
 			path = VIBRUNCE;
 			sourceTree = "<group>";
@@ -256,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D398E86327BC3DD800C35D38 /* Preview Assets.xcassets in Resources */,
+				D3129DA827C19788007BDDE4 /* BAHNSCHRIFT 12.TTF in Resources */,
 				D34AD86327C16601005B86D6 /* vibdark.jpeg in Resources */,
 				D398E86027BC3DD800C35D38 /* Assets.xcassets in Resources */,
 			);
@@ -282,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3129DAB27C1A797007BDDE4 /* MapAnn.swift in Sources */,
 				D398E85E27BC3DD600C35D38 /* ContentView.swift in Sources */,
 				D398E85C27BC3DD600C35D38 /* VIBRUNCEApp.swift in Sources */,
 				D34AD85327C14F33005B86D6 /* Credentials.swift in Sources */,
@@ -291,6 +304,7 @@
 				D34AD85B27C15B22005B86D6 /* UIApplication+Extension.swift in Sources */,
 				D34AD85D27C15CE6005B86D6 /* LoginViewPage.swift in Sources */,
 				D34AD85F27C15EAE005B86D6 /* Authentication.swift in Sources */,
+				D3129DAD27C1AE25007BDDE4 /* LocationMapAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +468,7 @@
 				DEVELOPMENT_TEAM = 87Z57BMPXA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIBRUNCE/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID for auto credential usage";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to track metrics and connect you with other runners";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -485,6 +500,7 @@
 				DEVELOPMENT_TEAM = 87Z57BMPXA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIBRUNCE/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID for auto credential usage";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to track metrics and connect you with other runners";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

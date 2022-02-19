@@ -10,12 +10,14 @@ import MapKit
 enum MapDetails {
     static let startingLocation = CLLocationCoordinate2D(latitude: 29.7512, longitude: -95.3588)
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+    
 }
 
 final class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation,
                                                span: MapDetails.defaultSpan )
+    
     
     var locationManager: CLLocationManager?
     
