@@ -30,6 +30,27 @@ struct LoginViewPage: View {
             }
             .disabled(loginVM.loginDisabled)
             .padding(.bottom, 20)
+            if authentication.biometricType() != .none {
+                Button {
+                    authentication.requestBiometricUnlock {
+                        (result:Result<Credentials,Authentication.AuthenticationError>) in
+                        switch result {
+                        case .success(let credentials):
+                            loginVM.credentials = credentials
+                            loginVM.login { success in
+                                authentication.updateValidation(success: success)
+                            }
+                        case .failure(let error):
+                            loginVM.error = error
+                        }
+                        
+                    }
+                } label: {
+                    Image(systemName: authentication.biometricType() == .face ? "faceid" : "touchid")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                }
+            }
             Image("vibdark")
                 .onTapGesture {
                     UIApplication.shared.endEditing()
@@ -41,7 +62,16 @@ struct LoginViewPage: View {
         .padding()
         .disabled(loginVM.showProgressView)
         .alert(item: $loginVM.error) { error in
-            Alert(title: Text("Invalid Login"), message: Text(error.localizedDescription))
+            if error == .credentialsNotSaved {
+                return Alert(title: Text("Credentials not saved"), message: Text(error.localizedDescription),
+                             primaryButton: .default(Text("Ok"), action: {
+                    
+                }),
+                             secondaryButton: .cancel())
+            } else {
+                return Alert(title: Text("Invalid Login"), message: Text(error.localizedDescription))
+            }
+            
         }
     }
 }
