@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D341363927C04EDE008C55B7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341363827C04EDE008C55B7 /* ContentViewModel.swift */; };
-		D341364027C05E09008C55B7 /* vibrunce logo again.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D341363F27C05E09008C55B7 /* vibrunce logo again.jpeg */; };
+		D34AD85127C14EC1005B86D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85027C14EC1005B86D6 /* LoginView.swift */; };
+		D34AD85327C14F33005B86D6 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85227C14F33005B86D6 /* Credentials.swift */; };
+		D34AD85727C14F7D005B86D6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85627C14F7D005B86D6 /* APIService.swift */; };
+		D34AD85B27C15B22005B86D6 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85A27C15B22005B86D6 /* UIApplication+Extension.swift */; };
+		D34AD85D27C15CE6005B86D6 /* LoginViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85C27C15CE6005B86D6 /* LoginViewPage.swift */; };
+		D34AD85F27C15EAE005B86D6 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AD85E27C15EAE005B86D6 /* Authentication.swift */; };
+		D34AD86327C16601005B86D6 /* vibdark.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D34AD86227C16601005B86D6 /* vibdark.jpeg */; };
 		D398E85C27BC3DD600C35D38 /* VIBRUNCEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E85B27BC3DD600C35D38 /* VIBRUNCEApp.swift */; };
 		D398E85E27BC3DD600C35D38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E85D27BC3DD600C35D38 /* ContentView.swift */; };
 		D398E86027BC3DD800C35D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D398E85F27BC3DD800C35D38 /* Assets.xcassets */; };
@@ -37,7 +43,13 @@
 
 /* Begin PBXFileReference section */
 		D341363827C04EDE008C55B7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		D341363F27C05E09008C55B7 /* vibrunce logo again.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "vibrunce logo again.jpeg"; path = "../../Downloads/vibrunce logo again.jpeg"; sourceTree = "<group>"; };
+		D34AD85027C14EC1005B86D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D34AD85227C14F33005B86D6 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		D34AD85627C14F7D005B86D6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D34AD85A27C15B22005B86D6 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		D34AD85C27C15CE6005B86D6 /* LoginViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewPage.swift; sourceTree = "<group>"; };
+		D34AD85E27C15EAE005B86D6 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D34AD86227C16601005B86D6 /* vibdark.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vibdark.jpeg; path = ../../Downloads/vibdark.jpeg; sourceTree = "<group>"; };
 		D398E85827BC3DD600C35D38 /* VIBRUNCE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIBRUNCE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D398E85B27BC3DD600C35D38 /* VIBRUNCEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBRUNCEApp.swift; sourceTree = "<group>"; };
 		D398E85D27BC3DD600C35D38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,11 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				D398E85B27BC3DD600C35D38 /* VIBRUNCEApp.swift */,
+				D34AD85E27C15EAE005B86D6 /* Authentication.swift */,
 				D398E85D27BC3DD600C35D38 /* ContentView.swift */,
 				D398E85F27BC3DD800C35D38 /* Assets.xcassets */,
-				D341363F27C05E09008C55B7 /* vibrunce logo again.jpeg */,
+				D34AD86227C16601005B86D6 /* vibdark.jpeg */,
 				D398E86127BC3DD800C35D38 /* Preview Content */,
 				D341363827C04EDE008C55B7 /* ContentViewModel.swift */,
+				D34AD85027C14EC1005B86D6 /* LoginView.swift */,
+				D34AD85227C14F33005B86D6 /* Credentials.swift */,
+				D34AD85627C14F7D005B86D6 /* APIService.swift */,
+				D34AD85A27C15B22005B86D6 /* UIApplication+Extension.swift */,
+				D34AD85C27C15CE6005B86D6 /* LoginViewPage.swift */,
 			);
 			path = VIBRUNCE;
 			sourceTree = "<group>";
@@ -238,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D398E86327BC3DD800C35D38 /* Preview Assets.xcassets in Resources */,
-				D341364027C05E09008C55B7 /* vibrunce logo again.jpeg in Resources */,
+				D34AD86327C16601005B86D6 /* vibdark.jpeg in Resources */,
 				D398E86027BC3DD800C35D38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +284,13 @@
 			files = (
 				D398E85E27BC3DD600C35D38 /* ContentView.swift in Sources */,
 				D398E85C27BC3DD600C35D38 /* VIBRUNCEApp.swift in Sources */,
+				D34AD85327C14F33005B86D6 /* Credentials.swift in Sources */,
+				D34AD85127C14EC1005B86D6 /* LoginView.swift in Sources */,
+				D34AD85727C14F7D005B86D6 /* APIService.swift in Sources */,
 				D341363927C04EDE008C55B7 /* ContentViewModel.swift in Sources */,
+				D34AD85B27C15B22005B86D6 /* UIApplication+Extension.swift in Sources */,
+				D34AD85D27C15CE6005B86D6 /* LoginViewPage.swift in Sources */,
+				D34AD85F27C15EAE005B86D6 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
